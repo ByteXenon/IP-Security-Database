@@ -5,7 +5,8 @@
 ## Instructions
 #### How to unpack:
 ```
-tar xpfv OpenWebDirectories.tar.gz
+tar xpfv 1_OpenWebDirectories.tar.gz
+tar xpfv 2_OpenWebDirectories.tar.gz
 ```
 ## Stats
 ```
