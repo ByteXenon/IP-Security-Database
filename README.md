@@ -1,8 +1,16 @@
-# Data-Dumps
-## **\~Dumpin' the hate you give\~**
-This data dump is 100% legal. This data was not purchased by me, it is purely my work.\
-Most of .json files here look like this:
-```
+# A comprehensive database of IPs
+## What is IP-Security-Database?
+
+IP Security Database is a collection of IPs gathered from various sources, including Shodan, and personal scanners.  
+The database covers a wide range of devices, from open web directories to IoT devices such as IP cameras.  
+The data is unique and up-to-date, making it an invaluable resource for cybersecurity professionals.
+
+### Statistics & Additional information
+
+<details>
+<summary><b>.json files format</b></summary>
+
+```json
 {
   "3.90.213.108": {
     "port": 80,
@@ -33,15 +41,15 @@ Most of .json files here look like this:
     "http": {
       "status": 200,
       "title": "Index of /",
-      components": {}
+      "components": {}
     }
   }
 }
 ```
-Sorry, Github doesn't allow me to upload files larger than 25MB and have this repository store more than 1GB here.\
-But I don't care.
+</details>
 
-<img src="https://media.tenor.com/OxrPk4Zbf1IAAAAC/dancing-protogen.gif" alt="dance" width="400" height="400"/>
+## Request for IoT Dumps
 
-For IoT dump requests email me, I will do it for free.
-My email is on my profile.
+Unfortunately, Github doesn't allow file uploads larger than 25MB, and this repository can only store up to 1GB.  
+However, I am willing to provide IoT dumps for free upon request. If you have any requests for IoT dumps,  
+please email me, my email is in my profile.
