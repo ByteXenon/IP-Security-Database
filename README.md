@@ -62,9 +62,9 @@ The `/Scripts` directory contains useful scripts that can be utilized to interac
 
 ## Usage
 
-To access the host information, simply navigate to the desired `.json` file in the `/data` directory. Each file contains a structured collection of entries, with each entry representing a host. The information provided includes the IP address, associated port, and relevant tags.
+To access the host information, simply navigate to the desired `.json` file in the `/DB` directory. Each file contains a structured collection of entries, with each entry representing a host. The information provided includes the IP address, associated port, and relevant tags.
 
-You can also make use of the scripts in the `/scripts` directory to automate tasks, extract subsets of data, or perform analysis on the host information.
+You can also make use of the scripts in the `/Scripts` directory to automate tasks, extract subsets of data, or perform analysis on the host information.
 
 ## License
 
