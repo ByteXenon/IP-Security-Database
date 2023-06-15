@@ -1,106 +1,77 @@
-# A comprehensive database of IPs
-## What is IP-Security-Database?
+# IP Security Database
 
-**IP Security Database is a collection of IPs gathered from various sources, including Shodan, Censys, and personal scanners and scrapers.  
-The database covers a wide range of devices, from open web directories to IoT devices such as IP cameras.  
-The data is unique and up-to-date, making it an invaluable resource for cybersecurity researchers**
+Welcome to the IP Security Database, a comprehensive collection of `.json` files containing information about hosts across the internet. This repository provides valuable data on IP addresses, ports, and associated tags.
 
-## IP Security Database in statistics:
+## Repository Structure
+
+The repository is organized as follows:
 ```
-Total hosts: 2,368,493
-Categories: 8
-Commits: More than 40
+.
+├── DB
+│   └── tags
+│       ├── c2
+│       ├── compromised
+│       ├── cryptocurrency
+│       ├── devops
+│       ├── doublepulsar
+│       ├── eol-os
+│       ├── eol-product
+│       ├── honeypot
+│       ├── ics
+│       ├── iot
+│       ├── malware
+│       ├── medical
+│       ├── onion
+│       ├── proxy
+│       ├── self-signed
+│       ├── starttls
+│       ├── tor
+│       ├── videogame
+│       └── vpn
+├── LICENSE
+├── README.md
+└── Scripts
+    └── ReadJSON.py
 ```
-### Statistics & Additional information
 
-<details>
-<summary><b>An example of an old .json file</b></summary>
+The `/DB` directory serves as the main storage location for the IP Security Database. It contains subdirectories under `/tags`, representing different categories or groupings of hosts based on their characteristics.
 
-```json
-{
-  "3.90.213.108": {
-    "port": 80,
-    "org": "Amazon Data Services NoVa",
-    "transport": "tcp",
-    "version": "2.4.29",
-    "isp": "Amazon.com, Inc.",
-    "tags": ["cloud"],
-    "hostnames": ["ec2-3-90-213-108.compute-1.amazonaws.com"],
-    "domains": ["amazonaws.com"],
-    "city": "Ashburn",
-    "state": "VA",
-    "vulns": {
-      "CVE-2022-26377": {
-        "cvss": 5.0,
-        "verified": false
-      },
-      "CVE-2006-20001": {
-        "cvss": null,
-        "verified": false
-      }
-    },
-    "cloud": {
-      "region": "us-east-1",
-      "service": "EC2",
-      "provider": "Amazon"
-    },
-    "http": {
-      "status": 200,
-      "title": "Index of /",
-      "components": {}
-    }
-  }
-}
-```
-</details>
-<details>
-<summary><b>An example of a new .json file</b></summary>
+The `/Scripts` directory contains useful scripts that can be utilized to interact with the data, perform analysis, or extract specific information.
 
-```json
-{
-  "162.144.239.125:443": {
-    "port": 443,
-    "org": "Unified Layer",
-    "transport": "tcp",
-    "version": null,
-    "isp": "Unified Layer",
-    "tags": null,
-    "hostnames": [
-      "cpcalendars.embalamixcomercio.com.br",
-      "webdisk.embalamixcomercio.com.br",
-      "cpanel.embalamixcomercio.com.br",
-      "www.embalamixcomercio.com.br",
-      "mail.embalamixcomercio.com.br",
-      "vps-5192186.florisa.adm.br",
-      "webmail.embalamixcomercio.com.br",
-      "cpcontacts.embalamixcomercio.com.br",
-      "embalamixcomercio.com.br"
-    ],
-    "domains": [
-      "embalamixcomercio.com.br",
-      "florisa.adm.br"
-    ],
-    "vulns": {},
-    "cloud": null,
-    "http": {
-      "status": 200,
-      "title": "Index of /",
-      "components": {}
-    },
-    "location": {
-      "latitude": 40.2347,
-      "longitude": -111.6447,
-      "city": "Provo",
-      "country": "US",
-      "state": null
-    }
-  }
-}
-```
-</details>
+## Tags
 
-## Request for IoT Dumps
+- **c2**: Hosts associated with command-and-control (C2) infrastructure.
+- **compromised**: Hosts that have been compromised or hacked.
+- **cryptocurrency**: Hosts involved in cryptocurrency-related activities.
+- **devops**: Hosts related to development and operations.
+- **doublepulsar**: Hosts vulnerable to or infected with the DoublePulsar backdoor.
+- **eol-os**: Hosts running end-of-life operating systems.
+- **eol-product**: Hosts running end-of-life software or products.
+- **honeypot**: Hosts intentionally set up to detect or lure potential attackers.
+- **ics**: Hosts that are part of industrial control systems (ICS).
+- **iot**: Hosts associated with the Internet of Things (IoT).
+- **malware**: Hosts known or suspected to be infected with malware.
+- **medical**: Hosts within the medical or healthcare industry.
+- **onion**: Hosts associated with the Tor network.
+- **proxy**: Hosts configured as proxies.
+- **self-signed**: Hosts using self-signed certificates.
+- **starttls**: Hosts supporting the StartTLS protocol.
+- **tor**: Hosts that are Tor relays or exit nodes.
+- **videogame**: Hosts related to video games.
+- **vpn**: Hosts associated with virtual private network (VPN) services.
 
-**Unfortunately, Github doesn't allow file uploads larger than 25MB, and this repository can only store up to 1GB.  
-However, I am willing to provide IoT dumps for free upon request. If you have any requests for IoT dumps,  
-please email me, my email is in my profile.**
+## Usage
+
+To access the host information, simply navigate to the desired `.json` file in the `/data` directory. Each file contains a structured collection of entries, with each entry representing a host. The information provided includes the IP address, associated port, and relevant tags.
+
+You can also make use of the scripts in the `/scripts` directory to automate tasks, extract subsets of data, or perform analysis on the host information.
+
+## License
+
+This repository is dedicated to the public domain under the [Unlicense](LICENSE). You are free to use the data and scripts in this repository for any purpose without any restrictions.
+
+## Contact
+
+If you have any questions or suggestions regarding the IP Security Database, please feel free to reach out to me at [ddavi142@asu.edu](mailto:ddavi142@asu.edu).
+
+I hope you find the IP Security Database useful in your endeavors to understand and analyze hosts across the internet. Happy exploring!
